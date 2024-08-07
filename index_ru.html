@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о работнике</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>   
+        <div class="header-left">
+            <img src="https://www.kbm.kz/wp-content/themes/bootstrap-basic4\assets\images\logo_kbm.png">
+            <div class="language">
+                <h1>AO "Каражанбасмунай" &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                <a href="https://www.kbm.kz/ru/" class="language1">kbm.kz</a>
+            </div>
+            <div class="language">
+                <a href="index.html" class="language1">KZ</a>
+                <a href="index_ru.html" class="language1">RU</a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="contact-info">
+                <p class="phone1">Телефон для справок</p>
+                <p class="phone2">+7(7292) 47-32-22</p>
+                <p class="phone2">47-30-00</p>
+                <a href="mailto:kbm@kbm.kz" class="phone3">kbm@kbm.kz</a>
+            </div>
+        </div>
+    </header>
+
+    <h2>Информация о работнике</h2>
+    <table>
+        <tr>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <td>Номер документа</td>
+            <td>{{ employee.request_count }}</td>
+        </tr>
+        <tr>
+            <td>ФИО</td>
+            <td>{{ employee.last_name }} {{ employee.first_name }} {{ employee.surname }}</td>
+        </tr>
+        <tr>
+            <td>Должность</td>
+            <td>{{ employee.job_title }}</td>
+        </tr>
+        <tr>
+            <td>Начало работы</td>
+            <td>{{ employee.start_work }}</td>
+        </tr>
+        <tr>
+            <td>Дата получения документа</td>
+            <td>{{ employee.request_date }}</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Телефон: +7 (7292) 43 36 00, 43 32 78</p>
+        <p>Email: info@kbm.kz</p>
+        <p>&nbsp;</p>
+        <p>&copy; 2024| AO "Каражанбасмунай" |All rights reserved</p>
+    </footer>
+</body>
+</html>

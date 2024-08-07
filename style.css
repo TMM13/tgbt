@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #012948;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    height: 80px; 
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 100%; 
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.language1 {
+    color: #FFF;
+    transition: color 0.3s ease; 
+}
+
+.language1:hover {
+    color: #008cd4;
+}
+
+.contact-info {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+.contact-info p {
+    margin: 0;
+    line-height: 1.2; 
+}
+
+.phone1 {
+    color: #FFF;
+}
+
+.phone2 {
+    color: #d1d1d1; 
+}
+
+.phone3 {
+    color: #cda880;
+    transition: color 0.3s ease; 
+}
+
+.phone3:hover {
+    color: #FFF; 
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #012948;
+    border-top: 2px solid #ddd;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.2; 
+}

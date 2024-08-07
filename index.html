@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Қызметкер туралы ақпарат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>   
+        <div class="header-left">
+            <img src="https://www.kbm.kz/wp-content/themes/bootstrap-basic4\assets\images\logo_kbm.png">
+            <div class="language">
+                <h1>"Қаражанбасмұнай" АҚ &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                <a href="https://www.kbm.kz/kz/" class="language1">kbm.kz</a>
+            </div>
+            <div class="language">
+                <a href="index.html" class="language1">KZ</a>
+                <a href="index_ru.html" class="language1">RU</a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="contact-info">
+                <p class="phone1">Анықтама телефоны</p>
+                <p class="phone2">+7(7292) 47-32-22</p>
+                <p class="phone2">47-30-00</p>
+                <a href="mailto:kbm@kbm.kz" class="phone3">kbm@kbm.kz</a>
+            </div>
+        </div>
+    </header>
+
+    <h2>Қызметкер туралы ақпарат</h2>
+    <table>
+        <tr>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <td>Құжат нөмірі</td>
+            <td>{{ employee.request_count }}</td>
+        </tr>
+        <tr>
+            <td>Аты-жөні</td>
+            <td>{{ employee.last_name }} {{ employee.first_name }} {{ employee.surname }}</td>
+        </tr>
+        <tr>
+            <td>Лауазымдық қызметі</td>
+            <td>{{ employee.job_title_kaz }}</td>
+        </tr>
+        <tr>
+            <td>Лауазымдық қызметін бастаған күні</td>
+            <td>{{ employee.start_work }}</td>
+        </tr>
+        <tr>
+            <td>Құжаттың берліген күні</td>
+            <td>{{ employee.request_date }}</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Телефон: +7 (7292) 43 36 00, 43 32 78</p>
+        <p>Email: info@kbm.kz</p>
+        <p>&nbsp;</p>
+        <p>&copy; 2024| "Қаражанбасмұнай" АҚ |All rights reserved</p>
+    </footer>
+</body>
+</html>
